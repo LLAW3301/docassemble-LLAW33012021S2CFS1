@@ -1,11 +1,19 @@
+include:
+  - CFS1_finalPage.yml
 ---
 objects:
   - endpoint: DADict
 ---
-#Tab header
 metadata:
   title: |
    CFS PLACEHOLDER
+  authors:
+    - name: James Roddick
+    - name: Asmaa Hani Farouq Abul Khair
+    - name: Rachael Brown
+    - name: Amelia Ghebe
+    - name: Janadene Klei
+    - organisation: Flinders University
 ---
 mandatory: True
 question: CFS PLACEHOLDER

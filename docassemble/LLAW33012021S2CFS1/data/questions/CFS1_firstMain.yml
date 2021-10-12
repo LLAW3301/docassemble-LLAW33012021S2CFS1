@@ -1,0 +1,64 @@
+#This is the introduction section that determines the user's eligibility,
+#as well as determining where to send them if they are eligible.
+---
+include:
+  - CFS1_endpoints.yml
+  - CFS1_finalPages.yml
+  - CFS1_introQuestions.yml
+---
+objects:
+  - endpoint: DADict
+---
+metadata:
+  title: |
+   CFS PLACEHOLDER
+  authors:
+    - name: James Roddick
+    - name: Asmaa Hani Farouq Abul Khair
+    - name: Rachael Brown
+    - name: Amelia Ghebe
+    - name: Janadene Klei
+    - organisation: Flinders University
+  exit url: https://www.cfs.sa.gov.au/home/
+---
+mandatory: True
+question: CFS PLACEHOLDER
+subquestion : |
+  Welcome to [PLACEHOLDER].
+  
+  ##### Disclaimer:
+  Advice given through this website **does not** constitute legal advice **must not**
+  be considered an alternative to seeking independent legal advice.
+  
+  While every effort is made to ensure the accuracy of the content on this website,
+  the South Australian Country Fire Service make no guarantees as to the reliability or
+  completeness of the material.
+  
+  By continuing, you are recognising and agreeing to these terms. If you do not accept,
+  please close the web page or select "Exit" below, where you will be redirected
+  to the South Australian Country Fire Service homepage.
+
+buttons:
+  - Continue: continue
+  - Exit: exit
+---
+mandatory: True
+code: |
+  if landOwnership == False:
+      endpoint['landOwnershipFalse']
+  else:
+     if userInterest == "localFire":
+       endpoint['localFireFinal']
+     else:
+       if userInterest == "clearLand":
+         endpoint['clearLandFinal']
+       else:
+         if userInterest == "manageLand":
+           endpoint['manageLandFinal']
+         else:
+           if userInterest == "neighbouringProperties":
+             endpoint['neighbouringPropertiesFinal']
+---
+question: Do you own land?
+yesno: landOwnership
+---

@@ -1,0 +1,22 @@
+metadata:
+  title: |
+   CFS PLACEHOLDER
+  authors:
+    - name: James Roddick
+    - name: Asmaa Hani Farouq Abul Khair
+    - name: Rachael Brown
+    - name: Amelia Ghebe
+    - name: Janadene Klei
+    - organisation: Flinders University
+  exit url: https://www.cfs.sa.gov.au/home/
+---
+event: endpoint['landOwnershipFalse']
+question: Please contact your Real Estate Agent
+subquestion: |
+  [PLACEHOLDER INELIGIBLE TEXT]
+  
+buttons:
+  - Restart: restart
+  - Exit: exit
+    url: https://www.sahealth.sa.gov.au/
+---

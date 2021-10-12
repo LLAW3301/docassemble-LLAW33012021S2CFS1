@@ -1,0 +1,48 @@
+metadata:
+  title: |
+   CFS PLACEHOLDER
+  authors:
+    - name: James Roddick
+    - name: Asmaa Hani Farouq Abul Khair
+    - name: Rachael Brown
+    - name: Amelia Ghebe
+    - name: Janadene Klei
+    - organisation: Flinders University
+  exit url: https://www.cfs.sa.gov.au/home/
+---
+event: endpoint['localFireFinal']
+question: localFireFinal
+subquestion: |
+  localFireFinal
+  
+buttons:
+  - Restart: restart
+  - Exit: exit
+---
+event: endpoint['clearLandFinal']
+question: clearLandFinal
+subquestion: |
+  clearLandFinal
+  
+buttons:
+  - Restart: restart
+  - Exit: exit
+---
+event: endpoint['manageLandFinal']
+question: manageLandFinal
+subquestion: |
+  manageLandFinal
+  
+buttons:
+  - Restart: restart
+  - Exit: exit
+---
+event: endpoint['neighbouringPropertiesFinal']
+question: neighbouringPropertiesFinal
+subquestion: |
+  neighbouringPropertiesFinal
+  
+buttons:
+  - Restart: restart
+  - Exit: exit
+---

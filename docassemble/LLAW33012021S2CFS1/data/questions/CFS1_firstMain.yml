@@ -44,9 +44,6 @@ buttons:
 ---
 mandatory: True
 code: |
-  if landOwnership == False:
-      endpoint['landOwnershipFalse']
-  else:
      if userInterest == "localFire":
        endpoint['localFireFinal']
      else:
@@ -58,7 +55,3 @@ code: |
          else:
            if userInterest == "neighbouringProperties":
              endpoint['neighbouringPropertiesFinal']
----
-question: Do you own land?
-yesno: landOwnership
----

@@ -10,7 +10,6 @@ metadata:
     - organisation: Flinders University
   exit url: https://www.cfs.sa.gov.au/home/
 ---
-need: landOwnership
 question: Which regional area is your land located in?
 field: userLocation
 choices:

@@ -10,13 +10,3 @@ metadata:
     - organisation: Flinders University
   exit url: https://www.cfs.sa.gov.au/home/
 ---
-event: endpoint['landOwnershipFalse']
-question: Please contact your Real Estate Agent
-subquestion: |
-  [PLACEHOLDER INELIGIBLE TEXT]
-  
-buttons:
-  - Restart: restart
-  - Exit: exit
-    url: https://www.sahealth.sa.gov.au/
----

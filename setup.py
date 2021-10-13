@@ -43,7 +43,7 @@ def find_package_data(where='.', package='', exclude=standard_exclude, exclude_d
     return out
 
 setup(name='docassemble.LLAW33012021S2CFS1',
-      version='0.0.3',
+      version='0.0.3.1',
       description=('A docassemble extension.'),
       long_description='# LLAW33012021S2CFS1\r\nA docassemble repository.\r\n',
       long_description_content_type='text/markdown',

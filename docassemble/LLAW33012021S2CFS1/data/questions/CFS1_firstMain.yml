@@ -49,7 +49,7 @@ code: |
        endpoint['localFireFinal']
      else:
        if userInterest == "clearManageLand":
-         endpoint['clearManageLandFinal']
+         endpoint['clearManageLandAsk']
        else:
          if userInterest == "neighbouringProperties":
            endpoint['neighbouringPropertiesFinal']

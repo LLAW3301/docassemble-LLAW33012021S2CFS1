@@ -1,0 +1,36 @@
+objects:
+  - endpoint: DADict
+---
+event: endpoint['clearFireFinal']
+question: clearFireFinal
+subquestion:  |
+  ##### Explain relevant info...
+buttons:
+  - Exit: exit
+  - Restart: restart
+---
+event: endpoint['overgrownLandFinal']
+question: overgrownLandFinal
+subquestion:  |
+  ##### Explain relevant info...
+buttons:
+  - Exit: exit
+  - Restart: restart
+---
+event: endpoint['nourishSoilFinal']
+need: nativeVegActAccept
+question: nourishSoilFinal
+subquestion:  |
+  ##### Explain relevant info...
+buttons:
+  - Exit: exit
+  - Restart: restart
+---
+event: endpoint['landManageFinal']
+question: nourishSoilFinal
+subquestion:  |
+  ##### Explain relevant info...
+buttons:
+  - Exit: exit
+  - Restart: restart
+---

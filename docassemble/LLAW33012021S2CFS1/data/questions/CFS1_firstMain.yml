@@ -2,9 +2,10 @@
 #as well as determining where to send them if they are eligible.
 ---
 include:
+  - CFS1_introQuestions.yml
   - CFS1_endpoints.yml
   - CFS1_finalPages.yml
-  - CFS1_introQuestions.yml
+  - CFS1_clearManageLand.yml
 ---
 objects:
   - endpoint: DADict
@@ -47,11 +48,8 @@ code: |
      if userInterest == "localFire":
        endpoint['localFireFinal']
      else:
-       if userInterest == "clearLand":
-         endpoint['clearLandFinal']
+       if userInterest == "clearManageLand":
+         endpoint['clearManageLandFinal']
        else:
-         if userInterest == "manageLand":
-           endpoint['manageLandFinal']
-         else:
-           if userInterest == "neighbouringProperties":
-             endpoint['neighbouringPropertiesFinal']
+         if userInterest == "neighbouringProperties":
+           endpoint['neighbouringPropertiesFinal']

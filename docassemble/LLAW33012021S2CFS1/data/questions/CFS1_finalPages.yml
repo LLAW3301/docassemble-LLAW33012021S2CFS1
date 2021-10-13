@@ -12,37 +12,24 @@ metadata:
 ---
 event: endpoint['localFireFinal']
 question: localFireFinal
-subquestion: |
-  localFireFinal
+subquestion:  |
+  ##### Explain to user the relevant proactive measures they need to take
+  ##### Hyperlink some text to direct user to CFS website (where relevant)
+  ##### Legislation will be cited (potentially)
   
 buttons:
+  - Exit: exit 
+    url: https://www.cfs.sa.gov.au/prepare-for-a-fire/make-a-plan/5-minute-bushfire-plan.jsp
   - Restart: restart
-  - Exit: exit
----
-event: endpoint['clearLandFinal']
-question: clearLandFinal
-subquestion: |
-  clearLandFinal
-  
-buttons:
-  - Restart: restart
-  - Exit: exit
----
-event: endpoint['manageLandFinal']
-question: manageLandFinal
-subquestion: |
-  manageLandFinal
-  
-buttons:
-  - Restart: restart
-  - Exit: exit
+  ##### exit button directs the user to CFS website (create your own bushfire plan webpage) where it provides with a guide on how to prepare for a fire, for future reference for the user
 ---
 event: endpoint['neighbouringPropertiesFinal']
 question: neighbouringPropertiesFinal
-subquestion: |
-  neighbouringPropertiesFinal
-  
+subquestion:  |
+  ##### This part will be used to explain to the user the legal responsibilities for both parties and their duties.
+  ##### Would be useful if we provide a list of things the user can can't do/ask their neighbour to do before contacting the local council or the CFS (unless its an urgent matter)
+  ##### Contact details of relevant local council will be displayed depending on the area the land is located in, and probably the CFS where its a matter of urgency
 buttons:
-  - Restart: restart
   - Exit: exit
+  - Restart: restart
 ---

@@ -57,10 +57,7 @@ choices:
   - There is a fire in my area. I want to protect myself and my assets: localFire
     help: |
       PLACEHOLDER TEXT
-  - I want to clear my land: clearLand
-    help: |
-      PLACEHOLDER TEXT
-  - I want to manage my land: manageLand
+  - I want to clear or manage my land: clearManageLand
     help: |
       PLACEHOLDER TEXT
   - I am concerned about neighbouring properties: neighbouringProperties

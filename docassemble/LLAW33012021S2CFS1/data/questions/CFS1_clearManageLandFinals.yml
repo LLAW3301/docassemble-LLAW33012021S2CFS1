@@ -1,6 +1,9 @@
 objects:
   - endpoint: DADict
 ---
+include:
+  - CFS1_clearManageLand.yml
+---
 event: endpoint['clearFireFinal']
 question: clearFireFinal
 subquestion:  |

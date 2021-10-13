@@ -1,3 +1,9 @@
+objects:
+  - endpoint: DADict
+---
+include:
+  - CFS1_clearManageLand.yml
+---
 metadata:
   title: |
    CFS PLACEHOLDER
@@ -9,4 +15,36 @@ metadata:
     - name: Janadene Klei
     - organisation: Flinders University
   exit url: https://www.cfs.sa.gov.au/home/
+---
+event: endpoint['nourishSoilAsk']
+code: |
+  if nativeVegActAccept == True:
+    endpoint['nourishSoilFinal']
+  else:
+    endpoint['nativeVegNo']
+---
+event: endpoint['clearFireAsk']
+code: |
+  if clearFireRisksAccept == True:
+    endpoint['clearFireFinal']
+  else:
+    endpoint['fireRisksNo']
+---
+event: endpoint['nativeVegNo']
+question: <i>Native Veg Act</i>
+subquestion: |
+  decline reason
+
+buttons:
+  - Exit: exit
+  - Restart: restart
+---
+event: endpoint['fireRisksNo']
+question: Contact someone to learn more about fire risks
+subquestion: |
+  contact info
+
+buttons:
+  - Exit: exit
+  - Restart: restart
 ---

@@ -3,6 +3,7 @@ objects:
 ---
 include:
   - CFS1_clearManageLandFinals.yml
+  - CFS1_endpoints.yml
 ---
 metadata:
   title: |
@@ -19,13 +20,13 @@ metadata:
 event: endpoint['clearManageLandAsk']
 code: |
   if clearLandReason == "clearFire":
-    endpoint['clearFireFinal']
+    endpoint['clearFireAsk']
   else:
     if clearLandReason == "overgrownLand":
       endpoint['overgrownLandFinal']
     else:
       if clearLandReason == "nourishSoil":
-        endpoint['nourishSoilFinal']
+        endpoint['nourishSoilAsk']
       else:
         if clearLandReason == "landManage":
           endpoint['landManageFinal']
@@ -46,3 +47,18 @@ choices:
   - I want to learn more about land management: landManage
 ##### The user will be directed to the relevant endpoint based on the input inserted
 ---
+question: nativeVegActAccept
+subquestion: |
+  Explain that you will need to comply with certain requirmenets and obtain approval under the Native Vegetation Act.
+  
+  Do you wish to proceed?
+
+yesno: nativeVegActAccept
+---
+question: clearFireRisksAccept
+subquestion: |
+  Explain that you will need to comply with certain requirmenets and obtain approval under the Native Vegetation Act.
+  
+  Do you wish to proceed?
+
+yesno: clearFireRisksAccept

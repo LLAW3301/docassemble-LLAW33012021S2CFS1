@@ -1,3 +1,1 @@
-A docassemble repository.
-
-Under construction.
+DO NOT FORK OR DOWNLOAD BRANCH. USE PROTOTYPE.

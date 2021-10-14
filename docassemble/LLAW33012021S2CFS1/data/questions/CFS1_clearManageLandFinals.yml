@@ -5,8 +5,6 @@ include:
   - CFS1_clearManageLand.yml
 ---
 metadata:
-  title: |
-   CFS PLACEHOLDER
   authors:
     - name: James Roddick
     - name: Asmaa Hani Farouq Abul Khair

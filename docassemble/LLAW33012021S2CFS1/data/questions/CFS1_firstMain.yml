@@ -1,6 +1,7 @@
 #This is the introduction section that determines the user's eligibility,
 #as well as determining where to send them if they are eligible.
 ---
+#include metadata so that we can split the application into multiple files
 include:
   - CFS1_introQuestions.yml
   - CFS1_endpoints.yml
@@ -22,6 +23,7 @@ metadata:
     - organisation: Flinders University
   exit url: https://www.cfs.sa.gov.au/home/
 ---
+#Introductory interview page
 mandatory: True
 question: South Australian Country Fire Service Land Management Support
 subquestion : |
@@ -44,6 +46,7 @@ buttons:
   - Continue: continue
   - Exit: exit
 ---
+#Determine where to send the user. Needs to be in this file because it's the only other mandatory block.
 mandatory: True
 code: |
      if userInterest == "localFire":

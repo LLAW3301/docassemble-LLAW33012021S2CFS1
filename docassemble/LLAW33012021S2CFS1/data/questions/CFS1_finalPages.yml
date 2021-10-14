@@ -1,6 +1,4 @@
 metadata:
-  title: |
-   CFS PLACEHOLDER
   authors:
     - name: James Roddick
     - name: Asmaa Hani Farouq Abul Khair
@@ -10,6 +8,7 @@ metadata:
     - organisation: Flinders University
   exit url: https://www.cfs.sa.gov.au/home/
 ---
+#information on local fires
 event: endpoint['localFireFinal']
 question: Preparing for Local Fires
 subquestion:  |
@@ -49,6 +48,7 @@ buttons:
   - Restart: restart
   ##### exit button directs the user to CFS website (create your own bushfire plan webpage) where it provides with a guide on how to prepare for a fire, for future reference for the user
 ---
+#information on neighbouring properties
 event: endpoint['neighbouringPropertiesFinal']
 question: Information on Neighbouring Properties
 subquestion:  |

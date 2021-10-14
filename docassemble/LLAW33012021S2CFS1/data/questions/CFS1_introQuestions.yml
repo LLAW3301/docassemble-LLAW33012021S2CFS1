@@ -10,43 +10,45 @@ metadata:
     - organisation: Flinders University
   exit url: https://www.cfs.sa.gov.au/home/
 ---
+#help tags will be used in a later iteration of the program.
 question: Which regional area is your land located in?
 field: userLocation
 choices:
   - Metropolitan Adelaide: metro
-    help: |
+#    help: |
   - Adelaide Hills: adelaideHills
-    help: |
+#    help: |
   - Barossa: barossa
-    help: |
+#    help: |
   - Clare Valley: clareValley
-    help: |
+#    help: |
   - Eyre Peninsula: eyrePeninsula
-    help: |
+#    help: |
   - Flinders Ranges and Outback: flindersRanges
-    help: |
+#    help: |
   - Kangaroo Island: kangarooIsland
-    help: |
+#    help: |
   - Limestone Coast: limestoneCoast
-    help: |
+#    help: |
   - Murray River, Lakes, and Coorong: mRiverLakesCoorong
-    help: |
+#    help: |
   - Riverland: riverland
-    help: |
+#    help: |
   - Yorke Peninsula: yorkePeninsula
-    help: |
+#    help: |
 right: |
   Please use this map to determine your location.
   [FILE Example_File.png]
 ---
+#help tags will be used in a later iteration of the program.
 need: userLocation
 question: What are you concerned about?
 field: userInterest
 choices:
   - There is a fire in my area. I want to protect myself and my assets: localFire
-    help: |
+#    help: |
   - I want to clear or manage my land: clearManageLand
-    help: |
+#    help: |
   - I am concerned about neighbouring properties: neighbouringProperties
-    help: |
+#    help: |
 ---

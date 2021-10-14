@@ -17,6 +17,7 @@ metadata:
     - organisation: Flinders University
   exit url: https://www.cfs.sa.gov.au/home/
 ---
+#Determine where to send the user based on their response to the question block below.
 event: endpoint['clearManageLandAsk']
 code: |
   if clearLandReason == "clearFire":
@@ -25,10 +26,10 @@ code: |
     if clearLandReason == "landManage":
       endpoint['landManageFinal']
 ---
+# The user will be directed to the relevant endpoint based on the input inserted
 question: Why do you want to clear or manage your vegetation?
 subquestion:  |
 field: clearLandReason
 choices:
   - There is fire in my area: clearFire
   - I want to learn more about land management: landManage
-##### The user will be directed to the relevant endpoint based on the input inserted

@@ -4,8 +4,8 @@ A docassemble extension.
 
 ## Author
 
-James Roddick
-Asmaa Hani Farouq Abul Khair
-Rachael Brown
-Amelia Ghebe
-Janadene Klei
+* James Roddick
+* Asmaa Hani Farouq Abul Khair
+* Rachael Brown
+* Amelia Ghebe
+* Janadene Klei

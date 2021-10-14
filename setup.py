@@ -45,7 +45,7 @@ def find_package_data(where='.', package='', exclude=standard_exclude, exclude_d
 setup(name='docassemble.LLAW33012021S2CFS1',
       version='0.1.0',
       description=('A docassemble extension.'),
-      long_description='# docassemble.LLAW33012021S2CFS1\r\n\r\nA docassemble extension.\r\n\r\n## Author\r\n\r\nJames Roddick\r\nAsmaa Hani Farouq Abul Khair\r\nRachael Brown\r\nAmelia Ghebe\r\nJanadene Klei',
+      long_description='# docassemble.LLAW33012021S2CFS1\r\n\r\nA docassemble extension.\r\n\r\n## Author\r\n\r\n* James Roddick\r\n* Asmaa Hani Farouq Abul Khair\r\n* Rachael Brown\r\n* Amelia Ghebe\r\n* Janadene Klei',
       long_description_content_type='text/markdown',
       author='James Roddick',
       author_email='rodd0056@flinders.edu.au',

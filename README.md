@@ -4,5 +4,8 @@ A docassemble extension.
 
 ## Author
 
-James Roddick, rodd0056@flinders.edu.au
-
+James Roddick
+Asmaa Hani Farouq Abul Khair
+Rachael Brown
+Amelia Ghebe
+Janadene Klei

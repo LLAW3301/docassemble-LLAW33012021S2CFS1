@@ -11,11 +11,37 @@ metadata:
   exit url: https://www.cfs.sa.gov.au/home/
 ---
 event: endpoint['localFireFinal']
-question: localFireFinal
+question: Preparing for Local Fires
 subquestion:  |
-  ##### Explain to user the relevant proactive measures they need to take
-  ##### Hyperlink some text to direct user to CFS website (where relevant)
-  ##### Legislation will be cited (potentially)
+  
+  Relevant proactive measures that need to be taken for:
+  
+  **Your Property** 
+  
+  Preparation is key to protect yourself and your assets
+  Maintaining the clearance of vegetation and rubbish from your home all year long can help to starve a fire
+  Reduce the vegetation by 20 meters from your home
+  Consider home and contents insurance
+  Please visit the [CFS website] for more information on what measures you can take to protect your property.
+  Yourself
+  
+  **Prepare a bushfire danger plan!**
+  
+  Plan to leave early on days that are forecasted as catastrophic
+  Only stay and defend if you are extremely well prepared and you home is properly constructed
+  [Click here] for more information on what measures you can take to protect yourself and others in your household
+
+  **IMPORTANT**: It is strongly recommended that a bushfire danger plan is prepared for the safety of yourself, for all household members and for the safety of your assets. It is also strongly recommended that property maintenance be performed throughout the year to keep your home safe. 
+
+  As part of your bushfire danger plan, [here] are 7 keys to surviving a bushfire which are recommend for review.
+
+  START YOUR BUSHFIRE DANGER PLAN HERE: https://cfs.sa.gov.au/prepare-for-a-fire/make-a-plan/5-minute-bushfire-plan/
+
+  [CFS website]: ${ url_of('https://www.cfs.sa.gov.au/prepare-for-a-fire/be-prepared/your-home-and-property/') }
+  
+  [Click here]: ${ url_of('https://www.cfs.sa.gov.au/prepare-for-a-fire/be-prepared/preparing-yourself/') }
+  
+  [here]: ${ url_of('https://www.cfs.sa.gov.au/prepare-for-a-fire/surviving-a-bushfire/') }
   
 buttons:
   - Exit: exit 
@@ -24,11 +50,28 @@ buttons:
   ##### exit button directs the user to CFS website (create your own bushfire plan webpage) where it provides with a guide on how to prepare for a fire, for future reference for the user
 ---
 event: endpoint['neighbouringPropertiesFinal']
-question: neighbouringPropertiesFinal
+question: Information on Neighbouring Properties
 subquestion:  |
-  ##### This part will be used to explain to the user the legal responsibilities for both parties and their duties.
-  ##### Would be useful if we provide a list of things the user can can't do/ask their neighbour to do before contacting the local council or the CFS (unless its an urgent matter)
-  ##### Contact details of relevant local council will be displayed depending on the area the land is located in, and probably the CFS where its a matter of urgency
+  
+  **Legal Responsibilities**
+
+  It is important to remove any vegetation, dead branches, leaves and undergrowth away from your home. There may be neighbouring properties that have been neglected to be bushfire ready.
+  
+  Ensuring that the land is maintained will allow for easier access to firefighters if there is a fire. 
+  It may also give you greater protection if a fire is threatening you. 
+
+  What to do first:
+
+  *Knock on the neighbours door for a chat about your concerns
+  *Installing a stone wall or earth barrier between the two properties
+  *Dropping a letter in the neighbours letterbox (or front door if there is no letterbox)
+
+  If you can not contact the neighbouring property owner, we suggest the below:
+
+  *Contact the council for the owner's contact details. Some councils will provide this information, while others will not
+  *Request the council to do a site visit, as a public safety hazard
+  *Contact the CFS to arrange a site inspection of the neighbouring property 
+  
 buttons:
   - Exit: exit
   - Restart: restart

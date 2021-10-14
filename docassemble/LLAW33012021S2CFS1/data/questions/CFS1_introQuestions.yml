@@ -15,37 +15,26 @@ field: userLocation
 choices:
   - Metropolitan Adelaide: metro
     help: |
-      PLACEHOLDER TEXT
   - Adelaide Hills: adelaideHills
     help: |
-      PLACEHOLDER TEXT
   - Barossa: barossa
     help: |
-      PLACEHOLDER TEXT
   - Clare Valley: clareValley
     help: |
-      PLACEHOLDER TEXT
   - Eyre Peninsula: eyrePeninsula
     help: |
-      PLACEHOLDER TEXT
   - Flinders Ranges and Outback: flindersRanges
     help: |
-      PLACEHOLDER TEXT
   - Kangaroo Island: kangarooIsland
     help: |
-      PLACEHOLDER TEXT
   - Limestone Coast: limestoneCoast
     help: |
-      PLACEHOLDER TEXT
   - Murray River, Lakes, and Coorong: mRiverLakesCoorong
     help: |
-      PLACEHOLDER TEXT
   - Riverland: riverland
     help: |
-      PLACEHOLDER TEXT
   - Yorke Peninsula: yorkePeninsula
     help: |
-      PLACEHOLDER TEXT
 right: |
   Please use this map to determine your location.
   [FILE Example_File.png]
@@ -56,11 +45,8 @@ field: userInterest
 choices:
   - There is a fire in my area. I want to protect myself and my assets: localFire
     help: |
-      PLACEHOLDER TEXT
   - I want to clear or manage my land: clearManageLand
     help: |
-      PLACEHOLDER TEXT
   - I am concerned about neighbouring properties: neighbouringProperties
     help: |
-      PLACEHOLDER TEXT
 ---

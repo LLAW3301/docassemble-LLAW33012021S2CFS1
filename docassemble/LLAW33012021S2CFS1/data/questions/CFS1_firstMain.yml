@@ -12,7 +12,7 @@ objects:
 ---
 metadata:
   title: |
-   CFS PLACEHOLDER
+   South Australian Country Fire Service Land Management Support
   authors:
     - name: James Roddick
     - name: Asmaa Hani Farouq Abul Khair
@@ -23,9 +23,10 @@ metadata:
   exit url: https://www.cfs.sa.gov.au/home/
 ---
 mandatory: True
-question: CFS PLACEHOLDER
+question: South Australian Country Fire Service Land Management Support
 subquestion : |
-  Welcome to [PLACEHOLDER].
+  Welcome to the South Australian Country Fire Service
+  Land Management Support application.
   
   ##### Disclaimer:
   Advice given through this website **does not** constitute legal advice **must not**

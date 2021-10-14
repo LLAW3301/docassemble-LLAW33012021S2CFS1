@@ -7,7 +7,7 @@ include:
 ---
 metadata:
   title: |
-   CFS PLACEHOLDER
+   South Australian Country Fire Service Land Management Support
   authors:
     - name: James Roddick
     - name: Asmaa Hani Farouq Abul Khair
@@ -20,45 +20,15 @@ metadata:
 event: endpoint['clearManageLandAsk']
 code: |
   if clearLandReason == "clearFire":
-    endpoint['clearFireAsk']
+    endpoint['clearFireFinal']
   else:
-    if clearLandReason == "overgrownLand":
-      endpoint['overgrownLandFinal']
-    else:
-      if clearLandReason == "nourishSoil":
-        endpoint['nourishSoilAsk']
-      else:
-        if clearLandReason == "landManage":
-          endpoint['landManageFinal']
+    if clearLandReason == "landManage":
+      endpoint['landManageFinal']
 ---
-question: CFS1_clearLand
+question: Why do you want to clear or manage your vegetation?
 subquestion:  |
-  Display relevant info and include relevant provisions to explain next steps?
-  Ask the user the question why they want to clear their land. Options will be displayed as radio buttons or as a pulldown field
-  
-  ----
-  #####Why do you want to clear or manage your vegetation?
-  
 field: clearLandReason
 choices:
   - There is fire in my area: clearFire
-  - My land is overgrown and I need advice on how I can clear my land: overgrownLand
-  - To improve and nourish the soil: nourishSoil
   - I want to learn more about land management: landManage
 ##### The user will be directed to the relevant endpoint based on the input inserted
----
-question: nativeVegActAccept
-subquestion: |
-  Explain that you will need to comply with certain requirmenets and obtain approval under the Native Vegetation Act.
-  
-  Do you wish to proceed?
-
-yesno: nativeVegActAccept
----
-question: clearFireRisksAccept
-subquestion: |
-  Explain that you will need to comply with certain requirmenets and obtain approval under the Native Vegetation Act.
-  
-  Do you wish to proceed?
-
-yesno: clearFireRisksAccept

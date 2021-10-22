@@ -13,32 +13,29 @@ metadata:
 #help tags will be used in a later iteration of the program.
 question: Which regional area is your land located in?
 field: userLocation
+default: region1
 choices:
-  - Metropolitan Adelaide: metro
-#    help: |
-  - Adelaide Hills: adelaideHills
-#    help: |
-  - Barossa: barossa
-#    help: |
-  - Clare Valley: clareValley
-#    help: |
-  - Eyre Peninsula: eyrePeninsula
-#    help: |
-  - Flinders Ranges and Outback: flindersRanges
-#    help: |
-  - Kangaroo Island: kangarooIsland
-#    help: |
-  - Limestone Coast: limestoneCoast
-#    help: |
-  - Murray River, Lakes, and Coorong: mRiverLakesCoorong
-#    help: |
-  - Riverland: riverland
-#    help: |
-  - Yorke Peninsula: yorkePeninsula
-#    help: |
+  - Adelaide Hills, Fleurieu Peninsula and Kangaroo Island: region1
+    help: | 
+      Region 1
+  - Upper Mount Lofty Ranges, Yorke Peninsula and Lower North: region2
+    help: |
+      Region 2
+  - Murraylands and Riverland: region3
+    help: |
+      Region 3
+  - Flinders, Mid North and Pastoral Areas: region4
+    help: |
+      Region 4
+  - South East: region5
+    help: |
+      Region 5
+  - Eyre Peninsula and West Coast: region6
+    help: |
+      Region 6
 right: |
   Please use this map to determine your location.
-  [FILE Example_File.png]
+  [FILE cfs_regions.png, 150%]
 ---
 #help tags will be used in a later iteration of the program.
 need: userLocation

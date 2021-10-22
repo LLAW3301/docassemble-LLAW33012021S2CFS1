@@ -2,7 +2,7 @@
 
 A docassemble extension.
 
-## Author
+## Authors
 
 * James Roddick
 * Asmaa Hani Farouq Abul Khair

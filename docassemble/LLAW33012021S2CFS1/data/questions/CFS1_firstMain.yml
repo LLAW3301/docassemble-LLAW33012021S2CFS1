@@ -1,10 +1,12 @@
 #This is the introduction section that determines the user's eligibility,
 #as well as determining where to send them if they are eligible.
+features:
+  debug: False
+  hide standard menu: True
 ---
 #include metadata so that we can split the application into multiple files
 include:
   - CFS1_introQuestions.yml
-  - CFS1_endpoints.yml
   - CFS1_finalPages.yml
   - CFS1_clearManageLand.yml
 ---
@@ -15,12 +17,8 @@ metadata:
   title: |
    South Australian Country Fire Service Land Management Support
   authors:
-    - name: James Roddick
-    - name: Asmaa Hani Farouq Abul Khair
-    - name: Rachael Brown
-    - name: Amelia Ghebe
-    - name: Janadene Klei
-    - organisation: Flinders University
+    - name: James Roddick, Asmaa Hani Farouq Abul Khair, Rachael Brown, Amelia Ghebe, and Janadene Klei
+      organisation: Flinders University
   exit url: https://www.cfs.sa.gov.au/home/
 ---
 #Introductory interview page
@@ -57,3 +55,18 @@ code: |
        else:
          if userInterest == "neighbouringProperties":
            endpoint['neighbouringPropertiesFinal']
+---
+# Modify the post default screen part to attribute work to Flinders and your client
+# Remember to replace XXXX with your client's name.
+default screen parts:
+  post: |
+    <div style="display: flex; height: 200px; align-items: flex-end; flex-direction: row-reverse">
+    <div style="margin: 5px"><img src="https://staff.flinders.edu.au/etc.clientlibs/flinders/clientlibs/clientlib-site/resources/images/flinderuni_main_logo_black.png" height="40">
+    </div>
+    <div style="margin: 5px; text-align: right">
+    <cite><small><i>
+    Developed by Flinders University in collaboration with the South Australian Country Fire Service
+    </i></small></cite>
+    </div>
+    </div>
+---

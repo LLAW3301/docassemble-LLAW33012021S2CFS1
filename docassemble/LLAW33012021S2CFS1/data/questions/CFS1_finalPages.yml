@@ -1,6 +1,9 @@
 metadata:
   exit url: https://www.cfs.sa.gov.au/home/
 ---
+include:
+  - CFS1_generateContact.yml
+---
 #information on local fires
 event: endpoint['localFireFinal']
 question: Preparing for Local Fires
@@ -32,9 +35,9 @@ subquestion:  |
 
   **IMPORTANT**: It is strongly recommended that a bushfire danger plan is prepared for the safety of yourself, for all household members and for the safety of your assets. It is also strongly recommended that property maintenance be performed throughout the year to keep your home safe. 
 
-  As part of your bushfire danger plan, [here] are 7 keys to surviving a bushfire which are recommend for review.
-
-  START YOUR BUSHFIRE DANGER PLAN HERE: https://cfs.sa.gov.au/prepare-for-a-fire/make-a-plan/5-minute-bushfire-plan/
+  As part of your bushfire danger plan, [here] are 7 keys to surviving 
+  a bushfire which are recommend for review. You may start making a
+  bushfire danger plan [here](${ url_of('https://cfs.sa.gov.au/prepare-for-a-fire/make-a-plan/5-minute-bushfire-plan') }).
 
   [CFS website]: ${ url_of('https://www.cfs.sa.gov.au/prepare-for-a-fire/be-prepared/your-home-and-property/') }
   
@@ -53,7 +56,7 @@ event: endpoint['neighbouringPropertiesFinal']
 question: Information on Neighbouring Properties
 subquestion:  |
   
-  **Legal Responsibilities**
+  ####Legal Responsibilities
 
   It is important to remove any vegetation, dead branches, leaves and 
   undergrowth away from your home. There may be neighbouring properties 
@@ -78,8 +81,11 @@ subquestion:  |
   
   * Request the council to do a site visit, as a public safety hazard
   
-  * Contact the CFS to arrange a site inspection of the neighbouring property 
+  * Contact the CFS to arrange a site inspection of the neighbouring property
   
+  -----
+  
+  ${contactInfo}
 buttons:
   - Exit: exit
   - Restart: restart

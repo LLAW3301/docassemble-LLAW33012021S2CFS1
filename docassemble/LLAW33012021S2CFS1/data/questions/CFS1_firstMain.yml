@@ -9,6 +9,7 @@ include:
   - CFS1_introQuestions.yml
   - CFS1_finalPages.yml
   - CFS1_clearManageLand.yml
+  - CFS1_generateContact.yml
 ---
 objects:
   - endpoint: DADict

@@ -1,0 +1,27 @@
+include:
+  - CFS1_introQuestions.yml
+---
+code: |
+  contactInfoTop = ####Contact details:<br>#####CFS State Headquarters<br>Level 7, 60 Waymouth Street Adelaide SA 5000<br />08 8115 3300<br />CFSHeadquarters@sa.gov.au
+---
+code: |
+  if userLocation == "region1":
+    userLocationFull = text
+  else:
+    if userLocation == "region2":
+      userLocationFull = text
+    else:
+      if userLocation == "region3":
+        userLocationFull = text
+      else:
+        if userLocation == "region4":
+          userLocationFull = text
+        else:
+          if userLocation == "region5":
+            userLocationFull = text
+          else:
+            if userLocation == "region6":
+              userLocationFull = text
+---
+code: |
+  contactInfo = "${ contactInfoTop }" + "<br/> #####${ userLocationFull }"

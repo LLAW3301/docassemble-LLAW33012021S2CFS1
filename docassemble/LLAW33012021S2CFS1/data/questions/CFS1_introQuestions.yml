@@ -36,9 +36,6 @@ question: What are you concerned about?
 field: userInterest
 choices:
   - There is a fire in my area. I want to protect myself and my assets: localFire
-#    help: |
   - I want to clear or manage my land: clearManageLand
-#    help: |
   - I am concerned about neighbouring properties: neighbouringProperties
-#    help: |
 ---

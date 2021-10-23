@@ -5,15 +5,6 @@ include:
   - CFS1_clearManageLandFinals.yml
 ---
 metadata:
-  title: |
-   South Australian Country Fire Service Land Management Support
-  authors:
-    - name: James Roddick
-    - name: Asmaa Hani Farouq Abul Khair
-    - name: Rachael Brown
-    - name: Amelia Ghebe
-    - name: Janadene Klei
-    - organisation: Flinders University
   exit url: https://www.cfs.sa.gov.au/home/
 ---
 #Determine where to send the user based on their response to the question block below.

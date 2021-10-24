@@ -1,9 +1,14 @@
+#This file is used to generate which contact info each interview page displays.
+#It is done here to save duplication of code, and to allow for easier
+#rollouts of modifications.
 include:
   - CFS1_introQuestions.yml
 ---
+#Sets the contact details for the SA CFS.
 code: |
   contactInfoTop = "<h5>Contact details</h5><h6>CFS State Headquarters</h6><p>Level 7, 60 Waymouth Street Adelaide SA 5000<br />08 8115 3300<br />CFSHeadquarters@sa.gov.au</p>"
 ---
+#Sets the contact information for each region.
 code: |
   region1Name="Adelaide Hills, Fleurieu Peninsula and Kangaroo Island"
   region1Address="75 Gawler Street, Mount Barker SA 5251"
@@ -34,6 +39,7 @@ code: |
   region6Address="32 Matthew Place, Port Lincoln SA 5606"
   region6Email="CFSRegion6@sa.gov.au"
 ---
+#Determines which contact information to show the user based on their location.
 code: |
   if userLocation == "region1":
     userLocationFull = "<h6>" + region1Name + "</h6><p>" + region1Address + "<br />" + region1Phone + "<br />" + region1Email+ "</p>"
@@ -53,5 +59,7 @@ code: |
             if userLocation == "region6":
               userLocationFull = "<h6>" + region6Name + "</h6><p>" + region6Address +"<br />" + region6Email+ "</p>"
 ---
+#Creates the variable used on each page.
+#A concatenation of the variables above.
 code: |
   contactInfo = contactInfoTop +"\n\n" + userLocationFull

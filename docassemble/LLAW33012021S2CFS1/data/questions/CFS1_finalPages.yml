@@ -72,12 +72,14 @@ subquestion:  |
   
   * Installing a stone wall or earth barrier between the two properties
   
-  * Dropping a letter in the neighbours letterbox (or front door if there is no 
-  letterbox)
+  * Dropping a letter in the neighbours letterbox
+  (or front door if there is no letterbox)
 
-  If you can not contact the neighbouring property owner, we suggest the below:
+  If you can not contact the neighbouring property owner,
+  we suggest the below:
 
-  * Contact the council for the owner's contact details. Some councils will provide this information, while others will not
+  * Contact the council for the owner's contact details.
+  Some councils will provide this information, while others will not
   
   * Request the council to do a site visit, as a public safety hazard
   
@@ -85,7 +87,7 @@ subquestion:  |
   
   -----
   
-  ${contactInfo}
+  ${ contactInfoTop }
 buttons:
   - Exit: exit
   - Restart: restart

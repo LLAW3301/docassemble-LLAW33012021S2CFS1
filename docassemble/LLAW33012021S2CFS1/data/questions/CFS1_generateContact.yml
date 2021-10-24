@@ -2,26 +2,56 @@ include:
   - CFS1_introQuestions.yml
 ---
 code: |
-  contactInfoTop = ####Contact details:<br>#####CFS State Headquarters<br>Level 7, 60 Waymouth Street Adelaide SA 5000<br />08 8115 3300<br />CFSHeadquarters@sa.gov.au
+  contactInfoTop = "#####Contact details:<br />######Name<br />Address<br />Phone<br />Email"
+---
+code: |
+  region1Name="Adelaide Hills, Fleurieu Peninsula and Kangaroo Island"
+  region1Address="75 Gawler Street, Mount Barker SA 5251"
+  region1Phone="08 8391 1866"
+  region1Email="CFSRegion1@sa.gov.au"
+  
+  region2Name="Upper Mount Lofty Ranges, Yorke Peninsula and Lower North"
+  region2Address="Spurling Circuit off Mudla Wirra Road, Wasleys"
+  region2Phone="08 8522 6088"
+  region2Email="CFSRegion2@sa.gov.au"
+  
+  region3Name="Murraylands and Riverland"
+  region3Address="11-17 Kennett Road, Murray Bridge"
+  region3Phone="08 8532 6800"
+  region3Email="CFSRegion3@sa.gov.au"
+  
+  region4Name="Flinders, Mid North and Pastoral Areas"
+  region4Address="40 Flinders Terrace, Port Augusta"
+  region4Phone="08 8642 2399"
+  region4Email="CFSRegion4@sa.gov.au"
+  
+  region5Name="South East"
+  region5Address="46 Smith Street, Naracoorte"
+  region5Phone="08 8762 7100"
+  region5Email="CFSRegion5@sa.gov.au"
+  
+  region6Name="Eyre Peninsula and West Coast"
+  region6Address="32 Matthew Place, Port Lincoln SA 5606"
+  region6Email="CFSRegion6@sa.gov.au"
 ---
 code: |
   if userLocation == "region1":
-    userLocationFull = text
+    userLocationFull = "######${region1Name}\n\${region1Address}\n\${region1Phone}\n\${region1Email}"
   else:
     if userLocation == "region2":
-      userLocationFull = text
+      userLocationFull = "text"
     else:
       if userLocation == "region3":
-        userLocationFull = text
+        userLocationFull = "text"
       else:
         if userLocation == "region4":
-          userLocationFull = text
+          userLocationFull = "text"
         else:
           if userLocation == "region5":
-            userLocationFull = text
+            userLocationFull = "text"
           else:
             if userLocation == "region6":
-              userLocationFull = text
+              userLocationFull = "text"
 ---
 code: |
-  contactInfo = "${ contactInfoTop }" + "<br/> #####${ userLocationFull }"
+  contactInfo = "${ contactInfoTop }\n\n${ userLocationFull }"

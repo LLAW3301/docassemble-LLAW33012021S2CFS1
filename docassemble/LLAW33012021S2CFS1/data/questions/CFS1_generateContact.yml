@@ -2,7 +2,7 @@ include:
   - CFS1_introQuestions.yml
 ---
 code: |
-  contactInfoTop = "<h3>Contact details</h3><h4>Name</h4><p>Address<br />Phone<br />Email</p>"
+  contactInfoTop = "<h5>Contact details</h5><h6>CFS State Headquarters</h6><p>Level 7, 60 Waymouth Street Adelaide SA 5000<br />08 8115 3300<br />CFSHeadquarters@sa.gov.au</p>"
 ---
 code: |
   region1Name="Adelaide Hills, Fleurieu Peninsula and Kangaroo Island"
@@ -36,22 +36,22 @@ code: |
 ---
 code: |
   if userLocation == "region1":
-    userLocationFull = "<h4>${region1Name}</h4><p>${region1Address}<br />${region1Phone}<br />${region1Email}</p>"
+    userLocationFull = "<h6>" + region1Name + "</h6><p>" + region1Address + "<br />" + region1Phone + "<br />" + region1Email+ "</p>"
   else:
     if userLocation == "region2":
-      userLocationFull = "text"
+      userLocationFull = "<h6>" + region2Name + "</h6><p>" + region2Address + "<br />" + region2Phone + "<br />" + region2Email+ "</p>"
     else:
       if userLocation == "region3":
-        userLocationFull = "text"
+        userLocationFull = "<h6>" + region3Name + "</h6><p>" + region3Address + "<br />" + region3Phone + "<br />" + region3Email+ "</p>"
       else:
         if userLocation == "region4":
-          userLocationFull = "text"
+          userLocationFull = "<h6>" + region4Name +"</h6><p>" + region4Address + "<br />" + region4Phone + "<br />" + region4Email+ "</p>"
         else:
           if userLocation == "region5":
-            userLocationFull = "text"
+            userLocationFull = "<h6>" + region5Name + "</h6><p>" + region5Address + "<br />" + region5Phone + "<br />" + region5Email+ "</p>"
           else:
             if userLocation == "region6":
-              userLocationFull = "text"
+              userLocationFull = "<h6>" + region6Name + "</h6><p>" + region6Address +"<br />" + region6Email+ "</p>"
 ---
 code: |
-  contactInfo = "${ contactInfoTop }\n\n${ userLocationFull }"
+  contactInfo = contactInfoTop +"\n\n" + userLocationFull

@@ -44,7 +44,10 @@ subquestion:  |
   [Click here]: ${ url_of('https://www.cfs.sa.gov.au/prepare-for-a-fire/be-prepared/preparing-yourself/') }
   
   [here]: ${ url_of('https://www.cfs.sa.gov.au/prepare-for-a-fire/surviving-a-bushfire/') }
+
+  -----
   
+  ${ contactInfo }
 buttons:
   - Exit: exit 
     url: https://www.cfs.sa.gov.au/prepare-for-a-fire/make-a-plan/5-minute-bushfire-plan.jsp

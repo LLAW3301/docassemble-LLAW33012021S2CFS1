@@ -63,6 +63,9 @@ subquestion: |
   is within 20 metres of your home, or 5 metres of sheds and garages 
   without a permit.
 
+  -----
+  
+  ${ contactInfo }
 buttons:
   - I would like to learn more about permits:
       code: |

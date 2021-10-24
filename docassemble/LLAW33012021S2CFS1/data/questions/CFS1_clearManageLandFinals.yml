@@ -27,6 +27,10 @@ subquestion:  |
   
   If your proposed clearance does not meet the requirements described, you can submit a clearance application under Section 28 of the Native Vegetation Act 1991 which can be done [here](${ url_of('https://www.environment.sa.gov.au/topics/native-vegetation/clearing/clearance-applications') }).
 
+  -----
+  
+  ${ contactInfo }
+  
 buttons:
   - Exit: exit
   - Restart: restart
@@ -44,6 +48,9 @@ subquestion:  |
   * Permit applications may be refused by the Authorised Officer if the activity is deemed too risky.
   * An Authorised Officer will assess your application and, if granted, give you a permit number and the specific conditions that apply to your permit.
 
+  -----
+  
+  ${ contactInfo }
 buttons:
   - Exit: exit
   - Restart: restart

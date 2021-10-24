@@ -63,8 +63,7 @@ code: |
          if userInterest == "neighbouringProperties":
            endpoint['neighbouringPropertiesFinal']
 ---
-# Modify the post default screen part to attribute work to Flinders and your client
-# Remember to replace XXXX with your client's name.
+#Footer
 default screen parts:
   post: |
     <div style="display: flex; height: 200px; align-items: flex-end; flex-direction: row-reverse">

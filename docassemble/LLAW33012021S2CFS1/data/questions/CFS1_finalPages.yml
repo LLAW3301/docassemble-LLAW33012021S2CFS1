@@ -87,7 +87,7 @@ subquestion:  |
   
   -----
   
-  ${ contactInfoTop }
+  ${ contactInfo }
 buttons:
   - Exit: exit
   - Restart: restart

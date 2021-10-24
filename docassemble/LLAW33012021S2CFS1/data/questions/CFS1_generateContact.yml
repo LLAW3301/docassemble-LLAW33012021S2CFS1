@@ -2,7 +2,7 @@ include:
   - CFS1_introQuestions.yml
 ---
 code: |
-  contactInfoTop = "#####Contact details:<br />######Name<br />Address<br />Phone<br />Email"
+  contactInfoTop = "<h3>Contact details</h3><h4>Name</h4><p>Address<br />Phone<br />Email</p>"
 ---
 code: |
   region1Name="Adelaide Hills, Fleurieu Peninsula and Kangaroo Island"
@@ -36,7 +36,7 @@ code: |
 ---
 code: |
   if userLocation == "region1":
-    userLocationFull = "######${region1Name}\n\${region1Address}\n\${region1Phone}\n\${region1Email}"
+    userLocationFull = "<h4>${region1Name}</h4><p>${region1Address}<br />${region1Phone}<br />${region1Email}</p>"
   else:
     if userLocation == "region2":
       userLocationFull = "text"

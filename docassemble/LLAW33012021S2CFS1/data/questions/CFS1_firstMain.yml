@@ -1,6 +1,7 @@
 #This is the introduction section that determines the user's eligibility,
 #as well as determining where to send them if they are eligible.
 features:
+  css: cfsApp.css
   debug: False
   hide standard menu: True
 ---
@@ -21,6 +22,8 @@ metadata:
     - name: James Roddick, Asmaa Hani Farouq Abul Khair, Rachael Brown, Amelia Ghebe, and Janadene Klei
       organisation: Flinders University
   exit url: https://www.cfs.sa.gov.au/home/
+  logo: |
+    [FILE cfs_logo.png, 100px]
 ---
 #Introductory interview page
 mandatory: True

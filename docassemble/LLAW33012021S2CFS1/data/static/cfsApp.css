@@ -1,0 +1,14 @@
+/*Set header banner to white
+!important forces an overwrite on previously existing formatting*/
+.navbar{
+    background-color: white !important;
+}
+
+/*Change text colour and font.
+Verdana is an easily readable font. See https://www.w3schools.com/cssref/css_websafe_fonts.asp
+#b3b3b3 is a light grey.
+*/
+.navbar .nav-item a{
+    color: #b3b3b3 !important;
+    font-family: Verdana, sans-serif;
+}

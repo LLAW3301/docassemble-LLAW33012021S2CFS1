@@ -1,4 +1,5 @@
-# docassemble.LLAW33012021S2CFS1
+# South Australian Country Fire Service Land Management Support
+### A docassemble program
 
 A docassemble extension made in collaboration with the South Australian Country Fire Service with the purpose of reducing the confusion surrounding fire safety.
 

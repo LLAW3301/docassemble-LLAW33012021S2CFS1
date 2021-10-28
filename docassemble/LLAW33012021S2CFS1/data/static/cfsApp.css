@@ -21,3 +21,13 @@ Verdana is an easily readable font. See https://www.w3schools.com/cssref/css_web
     color: #b3b3b3 !important;
     font-family: Verdana, sans-serif;
 }
+
+/*
+Change image alignment.
+vw is viewport, which means it's telling the img to be 30% of the width of the browser
+*/
+.map {
+width: 100%;
+height: auto;
+max-width: 100vw;
+}

@@ -68,7 +68,7 @@ choices:
 right: | #Break tags (<br /><br />) must exist to prevent clipping with the navbar.
   <br /><br />
   Please use this map to determine your location.
-  [FILE cfs_regions.png, 150%]
+  <img src="https://github.com/LLAW3301/docassemble-LLAW33012021S2CFS1/blob/final/docassemble/LLAW33012021S2CFS1/data/static/cfs_regions.png?raw=true" alt="Region map" class="map">
 
 ---
 #Used to determine the user's area of interest.

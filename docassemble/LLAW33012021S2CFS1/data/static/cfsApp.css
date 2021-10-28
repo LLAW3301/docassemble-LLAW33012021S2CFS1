@@ -8,8 +8,8 @@ Set header banner to white.
 Give full opacity.
 !important forces an overwrite on previously existing formatting*/
 .navbar{
-    background-color: white !important;
-    opacity: 1;
+ background-color: white !important;
+ opacity: 1;
 }
 
 /*
@@ -24,10 +24,15 @@ Verdana is an easily readable font. See https://www.w3schools.com/cssref/css_web
 
 /*
 Change image alignment.
-vw is viewport, which means it's telling the img to be 30% of the width of the browser
+vw is viewport width, which means it's telling the img to be 100% of the width of the div in the browser
 */
+
 .map {
-width: 100%;
-height: auto;
-max-width: 100vw;
+ width: 100%;
+ height: auto;
+ max-width: 100vw;
+}
+
+.centerText {
+ text-align: center;
 }

@@ -67,8 +67,9 @@ choices:
       ${ region6Email }<br />
 right: | #Break tags (<br /><br />) must exist to prevent clipping with the navbar.
   <br /><br />
-  Please use this map to determine your location.
+  <p class="centerText">Please use this map to determine your location.</p>
   <img src="https://github.com/LLAW3301/docassemble-LLAW33012021S2CFS1/blob/final/docassemble/LLAW33012021S2CFS1/data/static/cfs_regions.png?raw=true" alt="Region map" class="map">
+  <p class="centerText" style="font-style:italic;font-size:0.8rem">See <a href="https://www.cfs.sa.gov.au/about-cfs/cfs-regions">this page</a> for more details.</p>
 
 ---
 #Used to determine the user's area of interest.

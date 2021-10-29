@@ -1,3 +1,8 @@
+# use jinja
+#The line above **MUST** be present in this document as the first line.
+#It allows the region map below to be called regardless of the package.
+#See https://jinja.palletsprojects.com/ for documentation
+---
 #Introductory questions asked to determine their location and area of concern.
 ---
 include:
@@ -68,7 +73,7 @@ choices:
 right: | #Break tags (<br /><br />) must exist to prevent clipping with the navbar.
   <br /><br />
   <p class="centerText">Please use this map to determine your location.</p>
-  <img src="https://github.com/LLAW3301/docassemble-LLAW33012021S2CFS1/blob/final/docassemble/LLAW33012021S2CFS1/data/static/cfs_regions.png?raw=true" alt="Region map" class="map">
+  <img src="/packagestatic/{{ __current_package__ }}/cfs_regions.png" alt="Region map" class="map">
   <p class="centerText" style="font-style:italic;font-size:0.8rem">See <a href="https://www.cfs.sa.gov.au/about-cfs/cfs-regions">this page</a> for more details.</p>
 
 ---

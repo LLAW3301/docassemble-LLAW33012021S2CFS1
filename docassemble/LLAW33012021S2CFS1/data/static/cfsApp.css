@@ -3,6 +3,8 @@ Author:
 James Roddick
 */
 
+@import url('http://fonts.cdnfonts.com/css/gotham');
+
 /*
 Set header banner to white.
 Give full opacity.
@@ -19,7 +21,6 @@ Verdana is an easily readable font. See https://www.w3schools.com/cssref/css_web
 */
 .navbar .nav-item a{
     color: #b3b3b3 !important;
-    font-family: Verdana, sans-serif;
 }
 
 /*

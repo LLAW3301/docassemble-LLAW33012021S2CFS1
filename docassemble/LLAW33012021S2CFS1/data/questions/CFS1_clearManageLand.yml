@@ -29,7 +29,7 @@ code: |
   if wantsPermitInfo == "Yes":
     endpoint['landManageFinal']
 ---
-question: Clearance of Vegetation
+question: Land Management
 subquestion: |
   Keeping your home and property well managed throughout the year 
   is essential to bushfire safety. There are different ways to ensure 

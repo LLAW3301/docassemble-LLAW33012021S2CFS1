@@ -99,3 +99,19 @@ buttons:
   - Exit: exit
   - Restart: restart
 ---
+#Link to external websites
+event: endpoint['other']
+question: Other Concerns
+subquestion:  |
+  
+  This website only contains information regarding land management in South Australia.
+  
+  If you have any other concerns, please visit the [official CFS website](${ url_of('https://www.cfs.sa.gov.au/home/') }) or use the contact details below.
+ 
+  ------
+ 
+  ${ contactInfo }
+buttons:
+  - Exit: exit
+  - Restart: restart
+---

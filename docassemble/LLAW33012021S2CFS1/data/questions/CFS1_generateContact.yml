@@ -1,0 +1,65 @@
+#This file is used to generate which contact info each interview page displays.
+#It is done here to save duplication of code, and to allow for easier
+#rollouts of modifications.
+include:
+  - CFS1_introQuestions.yml
+---
+#Sets the contact details for the SA CFS.
+code: |
+  contactInfoTop = "<h5>Contact details</h5><h6>CFS State Headquarters</h6><p>Level 7, 60 Waymouth Street Adelaide SA 5000<br />08 8115 3300<br />CFSHeadquarters@sa.gov.au</p>"
+---
+#Sets the contact information for each region.
+code: |
+  region1Name="Adelaide Hills, Fleurieu Peninsula and Kangaroo Island"
+  region1Address="75 Gawler Street, Mount Barker SA 5251"
+  region1Phone="08 8391 1866"
+  region1Email="CFSRegion1@sa.gov.au"
+  
+  region2Name="Upper Mount Lofty Ranges, Yorke Peninsula and Lower North"
+  region2Address="Spurling Circuit off Mudla Wirra Road, Wasleys"
+  region2Phone="08 8522 6088"
+  region2Email="CFSRegion2@sa.gov.au"
+  
+  region3Name="Murraylands and Riverland"
+  region3Address="11-17 Kennett Road, Murray Bridge"
+  region3Phone="08 8532 6800"
+  region3Email="CFSRegion3@sa.gov.au"
+  
+  region4Name="Flinders, Mid North and Pastoral Areas"
+  region4Address="40 Flinders Terrace, Port Augusta"
+  region4Phone="08 8642 2399"
+  region4Email="CFSRegion4@sa.gov.au"
+  
+  region5Name="South East"
+  region5Address="46 Smith Street, Naracoorte"
+  region5Phone="08 8762 7100"
+  region5Email="CFSRegion5@sa.gov.au"
+  
+  region6Name="Eyre Peninsula and West Coast"
+  region6Address="32 Matthew Place, Port Lincoln SA 5606"
+  region6Email="CFSRegion6@sa.gov.au"
+---
+#Determines which contact information to show the user based on their location.
+code: |
+  if userLocation == "region1":
+    userLocationFull = "<h6>" + region1Name + "</h6><p>" + region1Address + "<br />" + region1Phone + "<br />" + region1Email+ "</p>"
+  else:
+    if userLocation == "region2":
+      userLocationFull = "<h6>" + region2Name + "</h6><p>" + region2Address + "<br />" + region2Phone + "<br />" + region2Email+ "</p>"
+    else:
+      if userLocation == "region3":
+        userLocationFull = "<h6>" + region3Name + "</h6><p>" + region3Address + "<br />" + region3Phone + "<br />" + region3Email+ "</p>"
+      else:
+        if userLocation == "region4":
+          userLocationFull = "<h6>" + region4Name +"</h6><p>" + region4Address + "<br />" + region4Phone + "<br />" + region4Email+ "</p>"
+        else:
+          if userLocation == "region5":
+            userLocationFull = "<h6>" + region5Name + "</h6><p>" + region5Address + "<br />" + region5Phone + "<br />" + region5Email+ "</p>"
+          else:
+            if userLocation == "region6":
+              userLocationFull = "<h6>" + region6Name + "</h6><p>" + region6Address +"<br />" + region6Email+ "</p>"
+---
+#Creates the variable used on each page.
+#A concatenation of the variables above.
+code: |
+  contactInfo = contactInfoTop +"\n\n" + userLocationFull

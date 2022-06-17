@@ -1,0 +1,90 @@
+# use jinja
+#The line above **MUST** be present in this document as the first line.
+#It allows the region map below to be called regardless of the package.
+#See https://jinja.palletsprojects.com/ for documentation
+---
+#Introductory questions asked to determine their location and area of concern.
+---
+include:
+  - CFS1_generateContact.yml
+---
+metadata:
+  exit url: https://www.cfs.sa.gov.au/home/
+---
+#Used to determine in which region the user is
+#located to provide relevant contact info.
+#A default field is provided for the purpose of evaluation.
+question: Which regional area is your land located in?
+field: userLocation
+default: region1
+choices:
+  - Adelaide Hills, Fleurieu Peninsula and Kangaroo Island: region1
+    help: | 
+      **Region 1**<br />
+      
+      ----
+      ${ region1Address }<br />
+      ${ region1Phone }<br />
+      ${ region1Email }<br />
+  - Upper Mount Lofty Ranges, Yorke Peninsula and Lower North: region2
+    help: |
+      **Region 2**<br />
+      
+      ----
+      
+      ${ region2Address }<br />
+      ${ region2Phone }<br />
+      ${ region2Email }<br />
+  - Murraylands and Riverland: region3
+    help: |
+      **Region 3**<br />
+      
+      ----
+      
+      ${ region3Address }<br />
+      ${ region3Phone }<br />
+      ${ region3Email }<br />
+  - Flinders, Mid North and Pastoral Areas: region4
+    help: |
+      **Region 4**<br />
+      
+      ----
+      
+      ${ region4Address }<br />
+      ${ region4Phone }<br />
+      ${ region4Email }<br />
+  - South East: region5
+    help: |
+      **Region 5**<br />
+      
+      ----
+      
+      ${ region5Address }<br />
+      ${ region5Phone }<br />
+      ${ region5Email }<br />
+  - Eyre Peninsula and West Coast: region6
+    help: |
+      **Region 6**<br />
+      
+      ----
+      
+      ${ region6Address }<br />
+      ${ region6Email }<br />
+right: | #Break tags (<br /><br />) must exist to prevent clipping with the navbar.
+  <br /><br />
+  <p class="centerText">Please use this map to determine your location.</p>
+  <img src="/packagestatic/{{ __current_package__ }}/cfs_regions.png" alt="Region map" class="map">
+  <p class="centerText" style="font-style:italic;font-size:0.8rem">See <a href="https://www.cfs.sa.gov.au/about-cfs/cfs-regions">this page</a> for more details.</p>
+
+---
+#Used to determine the user's area of interest.
+#No default is given because this would be contrary to the goals of the program.
+need: userLocation
+question: What are you concerned about?
+field: userInterest
+choices:
+  - There is a fire in my area. I want to protect myself and my assets: localFire
+  - I want to clear or manage my land: clearManageLand
+  - I am concerned about neighbouring properties: neighbouringProperties
+  - <i>Something not listed above</i>: other
+---

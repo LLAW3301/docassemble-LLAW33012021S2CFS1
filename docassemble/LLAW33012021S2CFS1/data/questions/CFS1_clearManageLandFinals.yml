@@ -1,0 +1,79 @@
+objects:
+  - endpoint: DADict
+---
+include:
+  - CFS1_clearManageLand.yml
+---
+metadata:
+  exit url: https://www.cfs.sa.gov.au/home/
+---
+event: endpoint['clearFireFinal']
+question: Clear Vegetation to Prepare for Fires
+subquestion:  |
+
+  If you want to clear vegetation as part of preparing your property for
+  a fire, you do not need to get approval from the Native Vegetation
+  Council or the Country Fire Service (except for large trees within
+  20m of a dwelling).
+    
+  All you need to do is:
+  
+  * *Self-assess* that you are clearing vegetation for the
+  purposes of fire prevention.
+  
+  * *Consider* if there are other practical alternatives to
+  clearing such as trenching that has a width of no more than
+  5 metres. If you are not the landowner, obtain the written
+  permission of the landowner.
+  
+  * *Clear vegetation* in accordance with any applicable
+  bushfire management plan or another plan for the management
+  of bushfires. *(Caution: You cannot clear large trees with a
+  trunk circumference greater than 2 meters)*
+  
+  If your proposed clearance does not meet the requirements
+  described, you can submit a clearance application under
+  Section 28 of the Native Vegetation Act 1991 which can be
+  done [here](${ url_of('https://www.environment.sa.gov.au/topics/native-vegetation/clearing/clearance-applications') }).
+
+  -----
+  
+  ${ contactInfo }
+  
+buttons:
+  - Exit: exit
+  - Restart: restart
+---
+event: endpoint['landManageFinal']
+question: Permit Information
+subquestion:  |
+  ###When to Obtain a Permit
+
+  Permits are required to light a fire, burn off, or operate
+  spark-creating equipment or machinery during the fire-ban season.
+  During the fire ban season, a schedule 9 permit must be applied for.
+  To complete any of the above activities on a complete fire ban day,
+  a schedule 10 permit must be applied for. If a permit is not applied
+  for and granted, and you perform any of the above activities during
+  the fire ban season or on a complete fire ban day, penalties of up
+  to $10,000 and two years of jail or on the spot fines of $315 can be issued.
+  
+  ####How to Apply for a schedule 9 or 10 Permit
+
+  * Permits are free of charge and can be requested by telephone,
+  fax or email from most local councils.
+  
+  * Permit applications may be refused by the Authorised Officer if the
+  activity is deemed too risky.
+  
+  * An Authorised Officer will assess your application and, if granted,
+  give you a permit number and the  specific conditions that apply to
+  your permit.
+
+  -----
+  
+  ${ contactInfo }
+buttons:
+  - Exit: exit
+  - Restart: restart
+---

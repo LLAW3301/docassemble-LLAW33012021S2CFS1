@@ -1,0 +1,75 @@
+objects:
+  - endpoint: DADict
+---
+include:
+  - CFS1_clearManageLandFinals.yml
+---
+metadata:
+  exit url: https://www.cfs.sa.gov.au/home/
+---
+#Determine where to send the user based on their response to the question block below.
+event: endpoint['clearManageLandAsk']
+code: |
+  if clearLandReason == "clearFire":
+    endpoint['clearFireFinal']
+  else:
+    if clearLandReason == "landManage":
+      endpoint['wantsPermitInfoAsk']
+---
+# The user will be directed to the relevant endpoint based on the input inserted
+question: Why do you want to clear or manage your vegetation?
+subquestion:  |
+field: clearLandReason
+choices:
+  - There is fire in my area: clearFire
+  - I want to learn more about land management: landManage
+---
+event: endpoint['wantsPermitInfoAsk']
+code: |
+  if wantsPermitInfo == "Yes":
+    endpoint['landManageFinal']
+---
+question: Land Management
+subquestion: |
+  Keeping your home and property well managed throughout the year 
+  is essential to bushfire safety. There are different ways to ensure 
+  you manage your property for the bushfire season, including clearing 
+  of vegetation, management of dwellings, and clearance of flammable 
+  and excess items around the home.
+
+  Reducing the amount of vegetation on a property is one of the most 
+  critical components of preparing for bushfires. However, there are 
+  council and statute requirements around the clearing of private land 
+  that depend on the size of the land, and whether you can simply clear 
+  the vegetation or whether it needs to be burned off.
+
+  There a number of tasks that can be completed without the approval of the
+  council or Country Fire Service, including:
+  
+  * Removal of all leaves, dead branches or vegetation on the ground
+  
+  * Ensuring all gutters are cleared
+  
+  * Slashing/mowing of paddocks with as much green waste removed as possible 
+  
+  * Removal of rubbish away from the home or structures 
+  
+  * Wood piles are stored away from the home
+  
+  * Prune tree limbs that are lower than two metres above the ground,
+  or overhanging our home
+
+  Importantly, regulations allow you to self-manage vegetation that 
+  is within 20 metres of your home, or 5 metres of sheds and garages 
+  without a permit.
+
+  -----
+  
+  ${ contactInfo }
+buttons:
+  - I would like to learn more about permits:
+      code: |
+        wantsPermitInfo = "Yes"
+  - Exit: exit
+  - Restart: restart
+---

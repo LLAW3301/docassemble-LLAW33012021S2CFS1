@@ -1,0 +1,81 @@
+#This is the introduction section that determines the user's eligibility,
+#as well as determining where to send them if they are eligible.
+features:
+  css: cfsApp.css
+  debug: False
+  hide standard menu: True
+---
+#include metadata so that we can split the application into multiple files
+include:
+  - CFS1_introQuestions.yml
+  - CFS1_finalPages.yml
+  - CFS1_clearManageLand.yml
+  - CFS1_generateContact.yml
+---
+objects:
+  - endpoint: DADict
+---
+metadata:
+  title: |
+   South Australian Country Fire Service Land Management Support
+  authors:
+    - name: James Roddick, Asmaa Hani Farouq Abul Khair, Rachael Brown, Amelia Ghebe, and Janadene Klei
+      organisation: Flinders University
+  exit url: https://www.cfs.sa.gov.au/home/
+  logo: |
+    [FILE cfs_logo.png, 100px]
+---
+#Introductory interview page
+mandatory: True
+question: South Australian Country Fire Service Land Management Support
+subquestion : |
+  Welcome to the South Australian Country Fire Service
+  Land Management Support application.
+  
+  ##### Disclaimer:
+  Advice given through this website **does not** constitute
+  legal advice **must not** be considered an alternative to
+  seeking independent legal advice.
+  
+  While every effort is made to ensure the accuracy of the
+  content on this website,  the South Australian Country
+  Fire Service make no guarantees as to the reliability or
+  completeness of the material.
+  
+  By continuing, you are recognising and agreeing to these
+  terms. If you do not accept, please close the web page or
+  select "Exit" below, where you will be redirected to the
+  South Australian Country Fire Service homepage.
+
+buttons:
+  - Continue: continue
+  - Exit: exit
+---
+#Determine where to send the user. Needs to be in this file because it's the only other mandatory block.
+mandatory: True
+code: |
+     if userInterest == "localFire":
+       endpoint['localFireFinal']
+     else:
+       if userInterest == "clearManageLand":
+         endpoint['clearManageLandAsk']
+       else:
+         if userInterest == "neighbouringProperties":
+           endpoint['neighbouringPropertiesFinal']
+         else:
+           if userInterest == "other":
+             endpoint['other']
+---
+#Footer
+default screen parts:
+  post: |
+    <div style="display: flex; height: 200px; align-items: flex-end; flex-direction: row-reverse">
+    <div style="margin: 5px"><img src="https://staff.flinders.edu.au/etc.clientlibs/flinders/clientlibs/clientlib-site/resources/images/flinderuni_main_logo_black.png" height="40">
+    </div>
+    <div style="margin: 5px; text-align: right">
+    <cite><small><i>
+    Developed by Flinders University in collaboration with the South Australian Country Fire Service
+    </i></small></cite>
+    </div>
+    </div>
+---

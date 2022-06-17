@@ -16,7 +16,6 @@ metadata:
 #A default field is provided for the purpose of evaluation.
 question: Which regional area is your land located in?
 field: userLocation
-default: region1
 choices:
   - Adelaide Hills, Fleurieu Peninsula and Kangaroo Island: region1
     help: | 
